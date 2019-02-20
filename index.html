@@ -13,6 +13,20 @@
 <body>
 <style>
 	body {background-color: #505050;}
+	#hero {
+		background:
+			/* top, transparent red, faked with gradient */
+				linear-gradient(
+						rgba(255, 0, 0, 0.45),
+						rgba(255, 0, 0, 0.45)
+				),
+					/* bottom, image */
+				url('/img/hero_image.jpg');
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
 </style>
 <header id="header">
 	<div class="container-fluid px-0">
@@ -50,8 +64,11 @@
 		</nav>
 	</div>
 </header>
-<div id="hero" class="">
-	<div class=""></div>
+<div id="hero" class="container-fluid">
+	<div class="row">
+		<h1 class="display-2">Brazilian Jiu-Jitsu</h1>
+		<p class="lead">This is my Brazilian Jiu-Jitsu website. I will go into detail about each belt in Brazilain Jiu Jitsu and what each belts signifies.</p>
+	</div>
 </div>
 <div class="container">
 	<div class="row my-3">
