@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbe069bd-dc38-41ac-8abb-62f5939808f6" name="Default Changelist" comment="my first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="89" selection-end-column="18" />
+            <state relative-caret-position="250">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -132,7 +131,7 @@
       <workItem from="1550090702917" duration="1406000" />
       <workItem from="1550253875590" duration="1458000" />
       <workItem from="1550261172153" duration="1079000" />
-      <workItem from="1550673710893" duration="4605000" />
+      <workItem from="1550673710893" duration="4745000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit">
       <created>1550253980117</created>
@@ -145,7 +144,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8548000" />
+    <option name="totallyTimeSpent" value="8688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="34" width="1853" height="931" extended-state="6" />
@@ -205,8 +204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="89" selection-end-column="18" />
+        <state relative-caret-position="250">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
         </state>
       </provider>
     </entry>
