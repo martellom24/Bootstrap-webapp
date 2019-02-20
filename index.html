@@ -14,6 +14,9 @@
 <style>
 	body {background-color: #505050;}
 	#hero {
+		margin: 0 0 55px 0;
+	}
+	.heroInner {
 		background:
 			/* top, transparent red, faked with gradient */
 				linear-gradient(
@@ -27,15 +30,14 @@
 		-moz-background-size: cover;
 		background-size: cover;
 		min-height: 100%;
-		padding-bottom: 55px;
 	}
 	@media only screen and (min-width:992px) {
-		#hero {
+		.heroInner {
 			min-height: 500px;
 		}
 	}
 	@media only screen and (max-width:991px) {
-		#hero {
+		.heroInner {
 			min-height: 350px;
 		}
 	}
@@ -78,10 +80,12 @@
 </header>
 <!-- hero image with intro text -->
 <div id="hero">
-	<div class="container">
-		<div class="row d-flex justify-content-center align-items-center">
-			<h1 class="display-2 text-center">Brazilian Jiu-Jitsu</h1>
-			<p class="lead">This is my Brazilian Jiu-Jitsu website. I will go into detail about each belt in Brazilain Jiu Jitsu and what each belts signifies.</p>
+	<div class="heroInner">
+		<div class="container">
+			<div class="row d-flex justify-content-center align-items-center">
+				<h1 class="display-2 text-center">Brazilian Jiu-Jitsu</h1>
+				<p class="lead">This is my Brazilian Jiu-Jitsu website. I will go into detail about each belt in Brazilain Jiu Jitsu and what each belts signifies.</p>
+			</div>
 		</div>
 	</div>
 </div>
