@@ -143,7 +143,7 @@
 			</div>
 			<div class="modal-body">
 				<p>Login for Mike Martello's Web App</p>
-				<form action="index_submit" method="get" accept-charset="utf-8">
+				<form action="" method="get" accept-charset="utf-8">
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
 							<span class="input-group-text" id="basic-addon1">@</span>
@@ -225,20 +225,20 @@
 	var output = "";
 
     var xhr = new XMLHttpRequest();
-    // xhr.open('GET', 'json/data.json', true);
-    // xhr.onreadystatechange = function(e) { 
-    //   if (this.status == 200 && this.) {
+    xhr.open('GET', 'json/data.json', true);
+    xhr.onreadystatechange = function(e, response) {
+       if (this.status == 200 && this.readyState == 4) {
     //       var file = new File([this.response], 'temp');
     //       var fileReader = new FileReader();
     //       fileReader.addEventListener('load', function(){
     //            //do stuff with fileReader.result
     //       });
     //       fileReader.readAsText(file);
-    //   } 
-    // }
-    // xhr.send();
-    console.log(xhr);
-	
+           console.log(this.response);
+      }
+    }
+    xhr.send();
+    // console.log(xhr);
 
 	// console.log(readMore);
 	// this is my mehotd to return the array above.  I thought that a for loop was the best solution to output the data from the array.
