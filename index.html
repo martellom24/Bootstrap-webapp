@@ -224,6 +224,22 @@
 	var id, readMore;
 	var output = "";
 
+    var xhr = new XMLHttpRequest();
+    // xhr.open('GET', 'json/data.json', true);
+    // xhr.onreadystatechange = function(e) { 
+    //   if (this.status == 200 && this.) {
+    //       var file = new File([this.response], 'temp');
+    //       var fileReader = new FileReader();
+    //       fileReader.addEventListener('load', function(){
+    //            //do stuff with fileReader.result
+    //       });
+    //       fileReader.readAsText(file);
+    //   } 
+    // }
+    // xhr.send();
+    console.log(xhr);
+	
+
 	// console.log(readMore);
 	// this is my mehotd to return the array above.  I thought that a for loop was the best solution to output the data from the array.
 	for (var i = 0; i < data.length; i++) {
