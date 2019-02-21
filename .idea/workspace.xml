@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="375">
+              <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -174,7 +174,7 @@
       <workItem from="1550761780567" duration="1281000" />
       <workItem from="1550768323095" duration="1347000" />
       <workItem from="1550777381591" duration="233000" />
-      <workItem from="1550779373211" duration="518000" />
+      <workItem from="1550779373211" duration="858000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit">
       <created>1550253980117</created>
@@ -187,7 +187,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13090000" />
+    <option name="totallyTimeSpent" value="13430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -215,7 +215,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298153" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49860257" visible="true" weight="0.31926122" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49860257" weight="0.31926122" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50139743" side_tool="true" weight="0.3298153" />
       <window_info anchor="bottom" auto_hide="true" id="Command Line Tools Console" order="12" sideWeight="0.4997205" weight="0.3298153" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4997205" weight="0.3298153" />
@@ -263,8 +263,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
         </state>
       </provider>
     </entry>

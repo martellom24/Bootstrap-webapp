@@ -175,7 +175,7 @@
 			// console.log(xhr);
 			// console.log(readMore);
 			console.log(data);
-			/*
+
 			// this is my mehotd to return the array above. I thought that a for loop was the best solution to output the data from the array.
 			for (var i = 0; i < data.length; i++) {
 
@@ -183,7 +183,9 @@
 				var string = data[i].meaning;
 				var trimmedString = string.substring(0, 200) + '...';
 
-				output += '<div class="col-3">' +
+				console.log(data);
+
+				/*output += '<div class="col-3">' +
 						'<div class="card text-white bg-secondary mb-3">' +
 						'<div class="card-header">' + data[i].name + '</div>' +
 						'<div class="card-body">'+
@@ -192,11 +194,10 @@
 						'<div class="modal fade" id="readMoreModalCenter-'+id+'" tabindex="-1" role="dialog" aria-labelledby="readMoreModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div id="readMore" class="modal-body text-secondary">' + data[i].meaning + '</div></div></div></div>' +
 						'</div>'+
 						'</div>'+
-						'</div>';
+						'</div>';*/
 			}
 			// This is my return statement to output the array into HTML
 			document.getElementById("belt_ranking_system").innerHTML = output;
-			*/
 		}
 	}
 	xhr.send();
