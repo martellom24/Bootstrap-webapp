@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+            <state relative-caret-position="1368">
+              <caret line="212" column="7" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
               <folding>
                 <element signature="e#7253#7259#0" expanded="true" />
                 <element signature="e#7842#7849#1" expanded="true" />
@@ -181,7 +181,7 @@
       <workItem from="1550777381591" duration="233000" />
       <workItem from="1550779373211" duration="3577000" />
       <workItem from="1551127183930" duration="2645000" />
-      <workItem from="1551136175884" duration="742000" />
+      <workItem from="1551136175884" duration="949000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit">
       <created>1550253980117</created>
@@ -194,7 +194,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19536000" />
+    <option name="totallyTimeSpent" value="19743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -222,7 +222,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298153" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49860257" weight="0.31897712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49860257" visible="true" weight="0.31897712" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50139743" side_tool="true" weight="0.3298153" />
       <window_info anchor="bottom" auto_hide="true" id="Command Line Tools Console" order="12" sideWeight="0.4997205" weight="0.3298153" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4997205" weight="0.3298153" />
@@ -267,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+        <state relative-caret-position="1368">
+          <caret line="212" column="7" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
           <folding>
             <element signature="e#7253#7259#0" expanded="true" />
             <element signature="e#7842#7849#1" expanded="true" />

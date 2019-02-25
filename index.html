@@ -160,7 +160,7 @@
     </div>
 </div>
 <script>
-    "use strict";
+
     var xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'json/data.txt', true);
@@ -168,7 +168,6 @@
         if (xhr.readyState === 4 && xhr.status === 200) {
             var JSONdata = JSON.parse(this.responseText);
             console.log(JSONdata);
-            // return data through HTML
             myFunction(JSONdata)
         }
     }
@@ -201,7 +200,10 @@
         // This is my return statement to output the array into HTML
         document.getElementById("belt_ranking_system").innerHTML = output;
     }
+
+
 </script>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
