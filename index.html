@@ -2,187 +2,187 @@
 <html lang="en">
 <head>
     <title>Martello WebApp</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--<script type="text/javascript" src="json/data.json"></script>-->
 </head>
 <body>
 <style>
-	body {background-color: #505050;}
-	#hero {
-		padding: 0 0 55px 0;
-	}
-	.heroInner {
-		background: -webkit-linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
-		background: -moz-linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
-		background: linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
-		background-repeat: no-repeat;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: center center;
-		height: 100%;
-	}
-	@media only screen and (min-width:992px) {
-		.heroInner {
-			height: 500px;
-		}
-	}
-	@media only screen and (max-width:991px) {
-		.heroInner {
-			height: 350px;
-		}
-	}
+    body {background-color: #505050;}
+    #hero {
+        padding: 0 0 55px 0;
+    }
+    .heroInner {
+        background: -webkit-linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
+        background: -moz-linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
+        background: linear-gradient(rgba(0, 123, 225, 0.45), rgba(0, 123, 225, 0.45)), url('img/hero_image.jpg');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        height: 100%;
+    }
+    @media only screen and (min-width:992px) {
+        .heroInner {
+            height: 500px;
+        }
+    }
+    @media only screen and (max-width:991px) {
+        .heroInner {
+            height: 350px;
+        }
+    }
 </style>
 <header id="header">
-	<div class="container-fluid px-0">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-			<a class="navbar-brand" href="#">Mike Martello</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="#">Mike Martello</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-				</ul>
-				<div class="my-2 my-lg-0">
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
-				</div>
-			</div>
-		</nav>
-	</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 <!-- hero image with intro text -->
 <div id="hero">
-	<div class="heroInner">
-		<div class="container h-100">
-			<div class="row h-100 justify-content-center align-items-center">
-				<div class="col-12 text-white">
-					<h1 class="display-2 text-center">Brazilian Jiu-Jitsu</h1>
-					<p class="lead">This is my Brazilian Jiu-Jitsu website. I will go into detail about each belt in Brazilain Jiu Jitsu and what each belts signifies.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="heroInner">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-12 text-white">
+                    <h1 class="display-2 text-center">Brazilian Jiu-Jitsu</h1>
+                    <p class="lead">This is my Brazilian Jiu-Jitsu website. I will go into detail about each belt in Brazilain Jiu Jitsu and what each belts signifies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- app content -->
 <div role="main" class="container">
-	<!-- Introduction to Brazilian Jiu-Jitsu -->
-	<div id="bjj_intro" class="row">
-		<div class="col-12 text-white">
-			<h2 class="h2 text-center">BJJ Introduction</h2>
-			<p>The <a href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" target="_blank" rel="nofollow">Brazilian jiu-jitsu</a> ranking system is a means of signifying a practitioner's increasing levels of technical knowledge and practical skill within the art of Brazilian jiu-jitsu. Colored belts that are worn as part of the uniform are awarded to the practitioner. While the ranking system's structure shares its origins with the judo ranking system and that of all colored martial arts belts, the Brazilian jiu-jitsu ranking system grew to incorporate unique aspects and themes. The system has minor differences from Judo in areas such as a division between youths and adults and the issuance of stripes and degrees. Some distinct differences have become synonymous with the art, such as a marked informality in promotional criteria, a focus on a competitive demonstration of skill, and a conservative approach to promotion.</p>
-		</div>
-	</div>
-	<!-- A breif history of Brazilian Jiu-Jitsu -->
-	<div id="bjj_history" class="row text-white my-5">
-		<div class="col-12">
-			<h2 class="h2 text-center">BJJ History</h2>
-			<p>In 1907, Kanō Jigorō, the founder of judo, introduced the use of belts (obi) and gi (judogi) in the martial arts, replacing the practice of training in formal kimonos. In 1914, Kanō's pupil Mitsuyo Maeda arrived in Brazil, a journey which led to the development of Brazilian jiu-jitsu. At the time Kanō used only white and black belts, with white representing the beginner, as a color of purity and simplicity, and black being the opposite, representing one who is filled with knowledge.</p>
-		</div>
-		<div class="col-12">
-			<p>Some believe that Mikonosuke Kawaishi was the first to introduce additional colors in 1935 when he began teaching Judo in Paris, ten years after Carlos Gracie opened his academy in Brazil. Kawaishi thought that a more structured system of colored belts would provide the student with visible rewards to show progress, increasing motivation and retention. Since then, Brazilian jiu-jitsu, judo, and many other martial arts have adopted the use of colored belts to denote students' progression in the arts.</p>
-		</div>
-		<div class="col-12">
-			<p>The first official belt ranking system was created in 1967 by the Jiu-Jitsu Federation of Guanabara. Much of the current criteria and modern belt ranks were implemented by the Sport Jiu Jitsu International Federation (SJJIF) and International Brazilian Jiu-Jitsu Federation.</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-12">
-			<h2 class="text-center mb-3 text-white">Belt Ranking System</h2>
-		</div>
-	</div>
-	<div id="belt_ranking_system" class="row"></div>
+    <!-- Introduction to Brazilian Jiu-Jitsu -->
+    <div id="bjj_intro" class="row">
+        <div class="col-12 text-white">
+            <h2 class="h2 text-center">BJJ Introduction</h2>
+            <p>The <a href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" target="_blank" rel="nofollow">Brazilian jiu-jitsu</a> ranking system is a means of signifying a practitioner's increasing levels of technical knowledge and practical skill within the art of Brazilian jiu-jitsu. Colored belts that are worn as part of the uniform are awarded to the practitioner. While the ranking system's structure shares its origins with the judo ranking system and that of all colored martial arts belts, the Brazilian jiu-jitsu ranking system grew to incorporate unique aspects and themes. The system has minor differences from Judo in areas such as a division between youths and adults and the issuance of stripes and degrees. Some distinct differences have become synonymous with the art, such as a marked informality in promotional criteria, a focus on a competitive demonstration of skill, and a conservative approach to promotion.</p>
+        </div>
+    </div>
+    <!-- A breif history of Brazilian Jiu-Jitsu -->
+    <div id="bjj_history" class="row text-white my-5">
+        <div class="col-12">
+            <h2 class="h2 text-center">BJJ History</h2>
+            <p>In 1907, Kanō Jigorō, the founder of judo, introduced the use of belts (obi) and gi (judogi) in the martial arts, replacing the practice of training in formal kimonos. In 1914, Kanō's pupil Mitsuyo Maeda arrived in Brazil, a journey which led to the development of Brazilian jiu-jitsu. At the time Kanō used only white and black belts, with white representing the beginner, as a color of purity and simplicity, and black being the opposite, representing one who is filled with knowledge.</p>
+        </div>
+        <div class="col-12">
+            <p>Some believe that Mikonosuke Kawaishi was the first to introduce additional colors in 1935 when he began teaching Judo in Paris, ten years after Carlos Gracie opened his academy in Brazil. Kawaishi thought that a more structured system of colored belts would provide the student with visible rewards to show progress, increasing motivation and retention. Since then, Brazilian jiu-jitsu, judo, and many other martial arts have adopted the use of colored belts to denote students' progression in the arts.</p>
+        </div>
+        <div class="col-12">
+            <p>The first official belt ranking system was created in 1967 by the Jiu-Jitsu Federation of Guanabara. Much of the current criteria and modern belt ranks were implemented by the Sport Jiu Jitsu International Federation (SJJIF) and International Brazilian Jiu-Jitsu Federation.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-3 text-white">Belt Ranking System</h2>
+        </div>
+    </div>
+    <div id="belt_ranking_system" class="row"></div>
 </div>
 <footer id="footer" class="bg-secondary">
-	<div class="container">
-		<div class="row">
-			<div class="col-12"><p class="my-3 text-white">&copy 2019 Mike Martello</p></div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><p class="my-3 text-white">&copy; 2019 Mike Martello</p></div>
+        </div>
+    </div>
 </footer>
 
 
 <!-- login Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<p>Login for Mike Martello's Web App</p>
-				<form action="" method="get" accept-charset="utf-8">
-					<div class="input-group mb-3">
-						<div class="input-group-prepend">
-							<span class="input-group-text" id="basic-addon1">@</span>
-						</div>
-						<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group mb-3">
-						<div class="input-group-prepend">
-							<!-- <span class="input-group-text" id="basic-addon1">@</span> -->
-						</div>
-						<input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Login</button>
-			</div>
-		</div>
-	</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Login for Mike Martello's Web App</p>
+                <form action="" method="get" accept-charset="utf-8">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+                        </div>
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
-
+    "use strict";
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'json/data.txt', true);
-    //xhr.responseType = 'json';
 
-    // Replace 'my_data' with the path to your file
+    xhr.open('GET', 'json/data.txt', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            var myArr = JSON.parse(this.responseText);
-            console.log(myArr);
-            myFunction(myArr)
+            var JSONdata = JSON.parse(this.responseText);
+            console.log(JSONdata);
+            // return data through HTML
+            myFunction(JSONdata)
         }
-    };
+    }
     xhr.send();
 
     function myFunction(data) {
 
         var output = "";
-        var id, readMore;
+        var readMore;
 
+        // for loop to return data from txt file
         for (var i = 0; i < data.length; i++) {
 
-            id = data[i].id;
+            var id = data[i].id;
             var string = data[i].meaning;
             var trimmedString = string.substring(0, 200) + '...';
 
@@ -196,14 +196,12 @@
                 '</div>'+
                 '</div>'+
                 '</div>';
+
         }
         // This is my return statement to output the array into HTML
         document.getElementById("belt_ranking_system").innerHTML = output;
     }
-
-
 </script>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
