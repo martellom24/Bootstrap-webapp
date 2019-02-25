@@ -166,9 +166,9 @@
     xhr.open('GET', 'json/data.txt', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            var myArr = JSON.parse(this.responseText);
-            console.log(myArr);
-            myFunction(myArr)
+            var JSONdata = JSON.parse(this.responseText);
+            console.log(JSONdata);
+            myFunction(JSONdata)
         }
     };
     xhr.send();
