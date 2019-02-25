@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Martello WebApp</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-	<title>Martello WebApp</title>
+    <!--<script type="text/javascript" src="json/data.json"></script>-->
 </head>
 <body>
 <style>
@@ -160,47 +160,47 @@
 	</div>
 </div>
 <script>
-    // variables
-    var len = 0;
-    var id, readMore;
-    var output = "";
-    var xhr = new XMLHttpRequest();
 
-    xhr.overrideMimeType("application/json");
-    xhr.open('GET', 'json/data.json', true);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'json/data.txt', true);
+    //xhr.responseType = 'json';
 
     // Replace 'my_data' with the path to your file
-    xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4 && xhr.status === "200") {
-            // Required use of an anonymous callback
-            // as .open() will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xhr.responseText);
-
-
-            for (var i = 0; i < data.length; i++) {
-
-                id = data[i].id;
-                var string = data[i].meaning;
-                var trimmedString = string.substring(0, 200) + '...';
-
-                output += '<div class="col-3">' +
-                    '<div class="card text-white bg-secondary mb-3">' +
-                    '<div class="card-header">' + data[i].name + '</div>' +
-                    '<div class="card-body">'+
-                    '<h5 class="card-title">' + data[i].duration +  '</h5>'+
-                    '<p class="card-text">' + trimmedString + ' <a href="#" id="id-' + id + '" class="d-block" data-toggle="modal" data-target="#readMoreModalCenter-'+id+'">read more</a></p>'+
-                    '<div class="modal fade" id="readMoreModalCenter-'+id+'" tabindex="-1" role="dialog" aria-labelledby="readMoreModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div id="readMore" class="modal-body text-secondary">' + data[i].meaning + '</div></div></div></div>' +
-                    '</div>'+
-                    '</div>'+
-                    '</div>';
-            }
-            // This is my return statement to output the array into HTML
-            document.getElementById("belt_ranking_system").innerHTML = output;
-
-
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var myArr = JSON.parse(this.responseText);
+            console.log(myArr);
+            myFunction(myArr)
         }
     };
     xhr.send();
+
+    function myFunction(data) {
+
+        var output = "";
+        var id, readMore;
+
+        for (var i = 0; i < data.length; i++) {
+
+            id = data[i].id;
+            var string = data[i].meaning;
+            var trimmedString = string.substring(0, 200) + '...';
+
+            output += '<div class="col-3">' +
+                '<div class="card text-white bg-secondary mb-3">' +
+                '<div class="card-header">' + data[i].name + '</div>' +
+                '<div class="card-body">'+
+                '<h5 class="card-title">' + data[i].duration +  '</h5>'+
+                '<p class="card-text">' + trimmedString + ' <a href="#" id="id-' + id + '" class="d-block" data-toggle="modal" data-target="#readMoreModalCenter-'+id+'">read more</a></p>'+
+                '<div class="modal fade" id="readMoreModalCenter-'+id+'" tabindex="-1" role="dialog" aria-labelledby="readMoreModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div id="readMore" class="modal-body text-secondary">' + data[i].meaning + '</div></div></div></div>' +
+                '</div>'+
+                '</div>'+
+                '</div>';
+        }
+        // This is my return statement to output the array into HTML
+        document.getElementById("belt_ranking_system").innerHTML = output;
+    }
+
 
 </script>
 
