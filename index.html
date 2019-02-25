@@ -50,7 +50,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Link</a>
@@ -69,7 +69,7 @@
 				</ul>
 				<div class="my-2 my-lg-0">
 					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
 				</div>
 			</div>
 		</nav>
@@ -127,7 +127,7 @@
 
 
 <!-- login Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -162,10 +162,8 @@
 <script>
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'json/data.txt', true);
-    //xhr.responseType = 'json';
 
-    // Replace 'my_data' with the path to your file
+    xhr.open('GET', 'json/data.txt', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var myArr = JSON.parse(this.responseText);
@@ -178,11 +176,12 @@
     function myFunction(data) {
 
         var output = "";
-        var id, readMore;
+        var readMore;
 
+        // for loop to return data from txt file
         for (var i = 0; i < data.length; i++) {
 
-            id = data[i].id;
+            var id = data[i].id;
             var string = data[i].meaning;
             var trimmedString = string.substring(0, 200) + '...';
 
@@ -196,6 +195,7 @@
                 '</div>'+
                 '</div>'+
                 '</div>';
+
         }
         // This is my return statement to output the array into HTML
         document.getElementById("belt_ranking_system").innerHTML = output;
