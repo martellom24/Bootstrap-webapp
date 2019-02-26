@@ -160,48 +160,59 @@
     </div>
 </div>
 <script>
+    "use strict";
+    // JavaScript now has adopted Block Scope into it core. I have used ECMA6script(ES6) into this app.
+    // define Function to return data to HTML
+    const myFunction = (data) => {
 
-    var xhr = new XMLHttpRequest();
-
-    xhr.open('GET', 'json/data.txt', true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            var JSONdata = JSON.parse(this.responseText);
-            console.log(JSONdata);
-            myFunction(JSONdata)
-        }
-    }
-    xhr.send();
-
-    function myFunction(data) {
-
-        var output = "";
-        var readMore;
+        let output = "",
+            readMore;
 
         // for loop to return data from txt file
-        for (var i = 0; i < data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
 
-            var id = data[i].id;
-            var string = data[i].meaning;
-            var trimmedString = string.substring(0, 200) + '...';
+            let id = data[i].id,
+                string = data[i].meaning,
+                trimString = string.substring(0, 200) + '...';
 
             output += '<div class="col-3">' +
                 '<div class="card text-white bg-secondary mb-3">' +
-                '<div class="card-header">' + data[i].name + '</div>' +
-                '<div class="card-body">'+
+                '<div class="card-header">' + data[i].name + '</div>';
+
+            output += '<div class="card-body">'+
                 '<h5 class="card-title">' + data[i].duration +  '</h5>'+
-                '<p class="card-text">' + trimmedString + ' <a href="#" id="id-' + id + '" class="d-block" data-toggle="modal" data-target="#readMoreModalCenter-'+id+'">read more</a></p>'+
-                '<div class="modal fade" id="readMoreModalCenter-'+id+'" tabindex="-1" role="dialog" aria-labelledby="readMoreModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div id="readMore" class="modal-body text-secondary">' + data[i].meaning + '</div></div></div></div>' +
-                '</div>'+
-                '</div>'+
-                '</div>';
+                '<p class="card-text">' + trimString + ' <a href="#" id="id-' + id + '" class="d-block" data-toggle="modal" data-target="#readMoreModalCenter-' + id + '">read more</a></p>'+
+                '<div class="modal fade" id="readMoreModalCenter-' + id + '" tabindex="-1" role="dialog" aria-labelledby="readMoreModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document">';
+
+            output += '<div class="modal-content"><div id="readMore" class="modal-body text-secondary">' + data[i].meaning + '</div></div></div></div></div></div></div>';
 
         }
         // This is my return statement to output the array into HTML
         document.getElementById("belt_ranking_system").innerHTML = output;
     }
 
+    // callback function to get data **in progress**
+    const init = (callback) => {
+        // add callback function...
+    }
 
+    // define a global variable, so i use "var" instead of "let"
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'json/data.txt', true);
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // define block level variable
+            let JSONdata = JSON.parse(xhr.responseText);
+            console.log(JSONdata);
+
+            let JSONurl = xhr.responseURL;
+            console.log(JSONurl);
+
+            myFunction(JSONdata);
+        }
+    }
+    xhr.send(null);
 </script>
 
 <!-- Optional JavaScript -->
