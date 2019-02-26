@@ -192,22 +192,28 @@
     }
 
     // callback function to get data **in progress**
-    const init = (callback) => {
+    /*const init = (url, callback) => {
         // add callback function...
-    }
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log(xhr);
+            }
+        }
+        xhr.send(null);
+    }*/
 
     // define a global variable, so i use "var" instead of "let"
-    var xhr = new XMLHttpRequest();
-
+    const xhr = new XMLHttpRequest();
     xhr.open('GET', 'json/data.txt', true);
+    xhr.responseType = "json";
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            // define block level variable
-            let JSONdata = JSON.parse(xhr.responseText);
-            console.log(JSONdata);
-
+            // if the responseType wasn't set, I would have to parse the file into JSON.
+            // let JSONdata = JSON.parse(xhr.response);
+            let JSONdata = xhr.response;
             let JSONurl = xhr.responseURL;
-            console.log(JSONurl);
 
             myFunction(JSONdata);
         }
