@@ -165,8 +165,7 @@
     // define Function to return data to HTML
     const myFunction = (data) => {
 
-        let output = "",
-            readMore;
+        let output = "", readMore;
 
         // for loop to return data from txt file
         for (let i = 0; i < data.length; i++) {
@@ -192,33 +191,21 @@
     }
 
     // callback function to get data **in progress**
-    /*const init = (url, callback) => {
+    const init = (callback) => {
         // add callback function...
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url, true);
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', callback, true);
         xhr.onreadystatechange = () => {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                console.log(xhr);
+            if (xhr.readyState === 4 && xhr.status === 200 ) {
+                let JSONdata = JSON.parse(xhr.responseText);
+                myFunction(JSONdata);
             }
         }
         xhr.send(null);
-    }*/
-
-    // define a global variable, so i use "var" instead of "let"
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'json/data.txt', true);
-    // xhr.responseType = "json";
-    xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            // if the responseType wasn't set, I would have to parse the file into JSON.
-            let JSONdata = JSON.parse(xhr.response);
-            // let JSONdata = xhr.response;
-            let JSONurl = xhr.responseURL;
-
-            myFunction(JSONdata);
-        }
     }
-    xhr.send(null);
+
+    init('json/data.txt');
+
 </script>
 
 <!-- Optional JavaScript -->
