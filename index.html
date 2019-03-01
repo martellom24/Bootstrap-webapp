@@ -207,12 +207,12 @@
     // define a global variable, so i use "var" instead of "let"
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'json/data.txt', true);
-    xhr.responseType = "json";
+    // xhr.responseType = "json";
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
             // if the responseType wasn't set, I would have to parse the file into JSON.
-            // let JSONdata = JSON.parse(xhr.response);
-            let JSONdata = xhr.response;
+            let JSONdata = JSON.parse(xhr.response);
+            // let JSONdata = xhr.response;
             let JSONurl = xhr.responseURL;
 
             myFunction(JSONdata);
