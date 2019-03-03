@@ -89,7 +89,7 @@
     </div>
 </div>
 <!-- app content -->
-<div role="main" class="container">
+<section role="main" class="container section my-5">
     <!-- Introduction to Brazilian Jiu-Jitsu -->
     <div id="bjj_intro" class="row">
         <div class="col-12 text-white">
@@ -110,21 +110,20 @@
             <p>The first official belt ranking system was created in 1967 by the Jiu-Jitsu Federation of Guanabara. Much of the current criteria and modern belt ranks were implemented by the Sport Jiu Jitsu International Federation (SJJIF) and International Brazilian Jiu-Jitsu Federation.</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center mb-3 text-white">Belt Ranking System</h2>
-        </div>
-    </div>
+</section>
+
+<!-- returned from JS below -->
+<section class="container-fluid py-5">
     <div id="belt_ranking_system" class="row"></div>
-</div>
+</section>
+
 <footer id="footer" class="bg-secondary">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12"><p class="my-3 text-white">&copy; 2019 Mike Martello</p></div>
         </div>
     </div>
 </footer>
-
 
 <!-- login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
@@ -166,6 +165,8 @@
     const myFunction = (data) => {
 
         let output = "", readMore;
+
+        output += "<div class=\"col-12\"><h2 class=\"text-center mb-3 text-white\">Belt Ranking System</h2></div>";
 
         // for loop to return data from txt file
         for (let i = 0; i < data.length; i++) {
