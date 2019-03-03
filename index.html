@@ -197,8 +197,8 @@
         xhr.open('GET', callback, true);
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4 && xhr.status === 200 ) {
-                let JSONdata = JSON.parse(xhr.responseText);
-                myFunction(JSONdata);
+                let data = JSON.parse(xhr.responseText);
+                myFunction(data);
             }
         }
         xhr.send(null);
