@@ -191,7 +191,6 @@
 
     // callback function to get data **in progress**
     const init = (callback) => {
-        // add callback function...
         let xhr = new XMLHttpRequest();
         xhr.open('GET', callback, true);
         xhr.onreadystatechange = () => {
